@@ -6,7 +6,7 @@
 i=1
 
 # la boucle qui permet d'afficher les arguments ligne par ligne
-while [ "$#" -gt 0 ]; do
+while [ "$@" ]; do
   echo "Argument $i: $1"
   shift
   i=$((i + 1))
