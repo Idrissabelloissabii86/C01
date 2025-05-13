@@ -1,4 +1,7 @@
 echo "$@"
-
-echo "Argument 1: $1"
-echo "Argument 2: $2"
+i=1
+while [ $# -gt 0 ];do
+    echo "Argument $i: $1"
+    shift
+    ((i++))
+done
