@@ -1,7 +1,6 @@
+#!/bin/bash
+#ce script affiche les arguments passés ligne par ligne
 echo $@
-
-count=1
-for arg in "$@"; do
-    echo "Argument $count: $arg"
-    ((count++))
-done
+echo "Argument 1: $1"
+shift
+echo "Argument 2: $1"
