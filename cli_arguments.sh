@@ -1,13 +1,15 @@
 #!/bin/bash
-# Ce script permet d'afficher les d'afficher les arguments qui suivent la commande d'exécution du script
 
-# déclaration d'une variable i qui sera incrémentée en fonction du nombre d'argument
-read argument
+# Demander à l'utilisateur d'entrer des arguments
+read ligne
+
+# Injecter les arguments dans $@, $1, etc.
+eval set -- $ligne
 i=1
 
-# la boucle qui permet d'afficher les arguments ligne par ligne
-while [ "$@" ]; do
-  echo "Argument $i: $1"
+# Afficher les arguments un par un
+while [ $# -gt 0 ]; do
+  echo "Argument $i : $1"
   shift
-  i=$((i + 1))
+  i=$((i++))
 done
