@@ -6,6 +6,6 @@ read b
 read operateur
 
 # Effectue l'opération
-if [ "operateur" = "+" ]; then
+if [ $operateur = "+" ]; then
      echo "Resultat : $a + $b"
 fi
