@@ -7,5 +7,5 @@ read operateur
 
 # Effectue l'opération
 if [ "operateur" = "+" ]; then
-     echo "Resultat : $((a + b))"
+     echo "Resultat : $a + $b"
 fi
