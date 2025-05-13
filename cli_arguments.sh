@@ -1,15 +1,10 @@
 #!/bin/bash
 
-# Demander à l'utilisateur d'entrer des arguments
-read ligne
+# Compteur d'arguments
+count=1
 
-# Injecter les arguments dans $@, $1, etc.
-eval set -- $ligne
-i=1
-
-# Afficher les arguments un par un
-while [ $# -gt 0 ]; do
-  echo "Argument $i : $1"
-  shift
-  i=$((i++))
+# Boucle sur tous les arguments passés au script
+for arg in "$@"; do
+    echo "Argument $count: $arg"
+    count=$((count + 1))
 done
