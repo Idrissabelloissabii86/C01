@@ -1,10 +1,8 @@
 #!/bin/bash
-
-# Compteur d'arguments
-count=1
-
-# Boucle sur tous les arguments passés au script
-for arg in "$@"; do
-    echo "Argument $count: $arg"
-    count=$((count + 1))
+# ce script permet d'afficher ligne par ligne les arguments qui accompagne le script
+i=1
+for argument in $@; do
+    echo "Argument $i: $1"
+    shift
+    i=$((i+1))
 done
