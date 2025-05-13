@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # Demande des entrées à l'utilisateur
-read num1 num2 op
+read a
+read b
+read op
 
 # Effectue l'opération
 if [ "$op" = "+" ]; then
-     echo "Resultat : $((num1 + num2))"
+     echo "Resultat : $((a + b))"
 fi
