@@ -1,7 +1,7 @@
 echo "$@"
 
-i=1
-for arg in "$@"; do
-  echo "Argument $i: $arg"
-  ((i++))
+while [ "$#" -gt 0 ]; do
+  echo "Argument 1: $1"
+  echo "Argument 2: $2"
+  exit 0
 done
