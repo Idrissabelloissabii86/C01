@@ -3,4 +3,4 @@
 echo $@
 echo "Argument 1: $1"
 shift
-echo "Argument 2: $1"
+echo "Argument 2: $2"
