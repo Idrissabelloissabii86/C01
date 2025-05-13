@@ -1,9 +1,14 @@
 #!/bin/bash
 
-# Demande des entrées à l'utilisateur
-read a b operateur
+# Demander les entrées à l'utilisateur
+read num1 num2 op
 
-# Effectue l'opération
-if [ $operateur = "+" ]; then
-     echo "Resultat : $a + $b"
-fi
+# Effectuer l'opération
+case "$op" in
+  +)
+    result=$((num1 + num2))
+    ;;
+esac
+
+# Afficher le résultat
+echo "Résultat : $result"
