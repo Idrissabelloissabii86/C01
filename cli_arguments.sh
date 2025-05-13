@@ -5,5 +5,5 @@ while [ $# -gt 0 ]; do
     echo "Argument 1: $1"
     shift
     echo "Argument 2: $1"
-    exit 0
+    shift
 done
