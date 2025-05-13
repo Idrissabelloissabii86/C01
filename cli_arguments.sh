@@ -1,7 +1,7 @@
-echo "$@"
-i=1
-while [ $# -gt 0 ];do
-    echo "Argument $i: $1"
-    shift
-    ((i++))
+echo $@
+
+count=1
+for arg in "$@"; do
+    echo "Argument $count: $arg"
+    ((count++))
 done
