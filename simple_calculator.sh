@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # Demande des entrées à l'utilisateur
-read a
-read b
-read operateur
+read a b operateur
 
 # Effectue l'opération
 if [ $operateur = "+" ]; then
