@@ -1,9 +1,8 @@
 #!/bin/bash
 #ce script affiche les arguments passés ligne par ligne
-echo $@
+read -a arguments
 i=1
-for arg in $@; do
-    echo "Argument $i: $arg"
-    shift
-    ((i++))
+for argument in "${arguments[@]}"; do
+  echo "Argument $i: $argument"
+  ((i++))
 done
