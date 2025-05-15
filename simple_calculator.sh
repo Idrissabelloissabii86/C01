@@ -8,6 +8,19 @@ case "$op" in
   +)
     result=$((num1 + num2))
     ;;
+  -)
+    result=$((num1 - num2))
+    ;;
+  \*)
+    result=$((num1 * num2))
+    ;;
+  /)
+    result=$((num1 / num2))
+    ;;
+  *)
+    echo "Opérateur invalide"
+    exit 1
+    ;;
 esac
 
 # Afficher le résultat
